@@ -7,15 +7,7 @@ const apiURL = 'https://api.spaceflightnewsapi.net/v4/articles'
 
 const FetchSection = function () {
   const [articles, setArticles] = useState<Article[]>([])
-  // quando inizializzate una variabile di stato con [ ]
-  // TS automaticamente gli assegna un tipo di "never[]"
-  // il tipo "never" rappresenta un valore che non si realizza mai
-  // e purtroppo non ci permetterà di utilizzare books in nessuna circostanza
-  // -> soluzione: non possiamo lasciare a TS il compito di determinare
-  // il valore di books: dobbiamo tipizzare NOI il valore di books!
-
   const getArticles = () => {
-    // recupero i libri dall'API
     fetch(apiURL)
       .then((response) => {
         if (response.ok) {
@@ -26,7 +18,7 @@ const FetchSection = function () {
       })
       .then((articles) => {
         console.log(articles)
-        setArticles(articles.results) // salvo i libri ottenuti nello state
+        setArticles(articles.results) 
       })
       .catch((err) => {
         console.log('ERRORE', err)

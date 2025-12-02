@@ -3,7 +3,7 @@ import { type Article } from '../Types'
 import { useNavigate } from 'react-router-dom';
 
 interface SingleArticleProps {
-  articoloDalleProps: Article // qui dovrei mettere sempre Article
+  articoloDalleProps: Article 
 }
 
 const SingleArticle = function ({ articoloDalleProps }: SingleArticleProps) {

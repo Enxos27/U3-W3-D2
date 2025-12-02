@@ -7,7 +7,6 @@ function WelcomeAlert() {
         variant="info" 
         className='text-center shadow-sm rounded-3 p-4'
       >
-        {/* Intestazione principale con icona */}
         <Alert.Heading className='display-5 fw-bold mb-3' style={{ color: "#007bff" }}> 
            <i className="bi bi-cloud-sun-fill"></i> EpiSpace
         </Alert.Heading>

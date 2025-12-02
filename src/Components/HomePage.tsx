@@ -12,8 +12,8 @@ function HomePage() {
     <WelcomeAlert></WelcomeAlert>
     <FetchSection/>
     <div className="mb-5 pb-5"></div>
-            <Footer></Footer>
-            </>
+    <Footer></Footer>
+    </>
   )
 }
 
