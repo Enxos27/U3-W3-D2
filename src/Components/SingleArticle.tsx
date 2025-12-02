@@ -16,7 +16,7 @@ const SingleArticle = function ({ articoloDalleProps }: SingleArticleProps) {
         <hr className='mt-1 mb-3'/>
         
                                   <Container className='d-flex justify-content-between m-0 p-0'> 
-                                    <Card.Text className='d-inline-bloc p-0'><span className='fw-bold'>Author: </span> {articoloDalleProps.authors[0].name}</Card.Text>
+                                    <Card.Text className='d-inline-bloc p-0'><span className='fw-bold'>Author: </span> <span className='fst-italic'>{articoloDalleProps.authors[0].name} </span></Card.Text>
                                     <Card.Text className='mb-1'><span className='fw-bold '>Published at: </span> {new Date(articoloDalleProps.published_at).toLocaleDateString('it-IT')}</Card.Text>
                                   </Container>
            <Container className='text-end'>

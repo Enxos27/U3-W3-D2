@@ -55,11 +55,11 @@ const ArticleDetails = () => {
                                   <Card.Text>{SingleArticle!.summary}</Card.Text>
 
                                   <Container className='d-flex justify-content-between m-0 p-0'> 
-                                    <Card.Text className='d-inline-bloc p-0'><span className='fw-bold'>Author: </span> {SingleArticle!.authors[0].name}</Card.Text>
+                                    <Card.Text className='d-inline-bloc p-0'><span className='fw-bold'>Author: </span> <span className='fst-italic'>{SingleArticle!.authors[0].name} </span></Card.Text>
                                     <Card.Text className='d-inline-block p-0'><span className='fw-bold'>Read more : </span> <a href={SingleArticle!.url} target="_blank" rel="noopener noreferrer" style={{textDecoration: "underline", color: "black"}}>HERE</a></Card.Text>
                                   </Container>
                                  
-                                  <Card.Text className='mb-1'><span className='fw-bold '>Published at: </span> {new Date(SingleArticle!.published_at).toLocaleDateString('it-IT')}</Card.Text>
+                                  <Card.Text className='mb-1 '><span className='fw-bold '>Published at: </span> {new Date(SingleArticle!.published_at).toLocaleDateString('it-IT')}</Card.Text>
                                   <Card.Text className='mb-1'><span className='fw-bold'>Updated at: </span> {new Date(SingleArticle!.updated_at).toLocaleDateString('it-IT')}</Card.Text>
                                   
                       <Container className='text-end'>
